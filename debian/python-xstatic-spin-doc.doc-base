@@ -1,0 +1,9 @@
+Document: python-xstatic-spin-doc
+Title: XStatic-Spin Documentation
+Author: N/A
+Abstract: Sphinx documentation for XStatic-Spin
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-xstatic-spin-doc/html/index.html
+Files: /usr/share/doc/python-xstatic-spin-doc/html/*
