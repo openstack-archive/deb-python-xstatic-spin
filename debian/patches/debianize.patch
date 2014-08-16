@@ -1,0 +1,29 @@
+Description: Uses javascript from libjs-spin.js
+ Avoid using embedded files
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2014-08-16
+
+--- python-xstatic-spin-1.2.8.0+dfsg1.orig/xstatic/pkg/spin/__init__.py
++++ python-xstatic-spin-1.2.8.0+dfsg1/xstatic/pkg/spin/__init__.py
+@@ -11,7 +11,7 @@ NAME = __name__.split('.')[-1] # package
+                                # please use a all-lowercase valid python
+                                # package name
+ 
+-VERSION = '1.2.5' # version of the packaged files, please use the upstream
++VERSION = '1.2.8' # version of the packaged files, please use the upstream
+                   # version number
+ BUILD = '2' # our package build number, so we can release new builds
+              # with fixes for xstatic stuff.
+@@ -34,9 +34,9 @@ HOMEPAGE = 'http://fgnass.github.io/spin
+ LICENSE = '(same as %s)' % DISPLAY_NAME
+ 
+ from os.path import join, dirname
+-BASE_DIR = join(dirname(__file__), 'data')
++#BASE_DIR = join(dirname(__file__), 'data')
+ # linux package maintainers just can point to their file locations like this:
+-#BASE_DIR = '/usr/share/javascript/spin'
++BASE_DIR = '/usr/share/javascript/spin.js'
+ 
+ LOCATIONS = {
+     # CDN locations (if no public CDN exists, use an empty dict)
